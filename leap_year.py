@@ -13,7 +13,7 @@ def is_leap(year):
     return leap
 
 year = int(input("Let's check if a year is leap year or not, give me a year!! "))
-if is_leap==True:
+if is_leap(year)==True:
     print("It's a leap year")
 else:
     print("This is not a leap year")
