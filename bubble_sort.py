@@ -12,6 +12,6 @@ def list_sort(list):
                     list[x-j-1], list[x-j-2] = list[x-j-2], list[x-j-1]
     return list
 
-list_1 = []
+list_1 = [1,26,18,91,6,19,19,]
 
 print(list_sort(list_1))
