@@ -1,11 +1,10 @@
 def sort(list):
-    empty_list = []
     limit=len(list)
     for i in range(limit):
-        minima = min(list)
-        empty_list.append(minima)
-        list.remove(minima)
-    return empty_list
+        minima = min(list[i:])
+        x = list.index(minima)
+        list[i], list[x]=list[x], list[i]
+    return list
 
 def get_list():
     user_list = []
